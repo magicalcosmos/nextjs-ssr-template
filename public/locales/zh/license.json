@@ -1,0 +1,24 @@
+{
+  "name": "许可证名称",
+  "title": "许可证详情",
+  "user_count": "用户数",
+  "cpu_count": "CPU数",
+  "expires": "到期时间",
+  "status": "状态",
+  "user": "使用者",
+  "validation": "有效期",
+  "testcase_format": "用例格式",
+  "static": {
+    "name": "静态分析",
+    "rule_settings": "规则集"
+  },
+  "unit": {
+    "name": "单元测试",
+    "language": "语言"
+  },
+  "integration": {
+    "name": "集成测试"
+  },
+  "import": "导入",
+  "export": "导出"
+}

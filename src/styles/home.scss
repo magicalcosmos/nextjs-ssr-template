@@ -1,0 +1,204 @@
+.client-home {
+  background: $white;
+  box-shadow: 0px 2px 22px 0px rgba(0,0,0,0.03);
+  border-radius: 10px;
+  color: $grey-light;
+  font-size: 12px;
+  min-height: 696px;
+  padding: 15px;
+  margin: 15px 5% 0 5%;
+
+  .summary {
+    overflow: hidden;
+    padding-left: 14px;
+
+    .search-input {
+      border-radius: 5px;
+      border: 1px solid #d9d9d9;
+      float: right;
+      height: 32px;
+      margin-right: 8px;
+      width: 200px;
+
+      input {
+        color: #000000;
+
+        &::placeholder {
+          color: $grey-medium;
+        }
+      }
+
+      .icon-search {
+        @include setWH(30px, 30px);
+
+        background: url('/images/search.png') no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  table {
+    margin-top: 20px;
+    width: 100%;
+
+    th {
+      font-weight: 400;
+      white-space: nowrap;
+      min-width: 140px;
+    }
+
+    td, th {
+      border-bottom: 1px solid $table-border;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 10%;
+
+      &:first-child {
+        padding-left: 14px;
+        text-align: left;
+      }
+    }
+
+    tr {
+      @include setHL(25px);
+
+      text-align: center;
+
+    }
+
+  }
+
+  .remark {
+    max-width: 300px;
+  }
+
+  .to-be-distributed, .distributed, .expired {
+    @include setWH(7px, 7px);
+
+    background: $to-be-distributed;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  .distributed {
+    background: $distributed;
+  }
+
+  .expired {
+    background: $expired;
+  }
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    &.distribute {
+      color: $primary-color;
+    }
+
+    &.download {
+      color: $primary-color;
+      margin-right: 13px;
+    }
+
+    &.disable {
+      cursor: unset;
+      opacity: 0.3;
+    }
+
+    &.recycle {
+      color: $expired;
+    }
+  }
+  
+
+  .pagination {
+    margin: 20px auto 0 auto;
+    width: 350px;
+  }
+}
+
+.home-dialog-list {
+  margin: 0 20px;
+
+  .home-dialog-item {
+    padding-bottom: 15px;
+    position: relative;
+
+    &.no-empty {
+      textarea, input {
+        border: 1px solid $required;
+
+        &:focus {
+          outline-color: $required;
+        }
+      }
+    }
+
+    & > label,
+    & > textarea,
+    & > input {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    & > textarea,
+    & > input {
+      border: 1px solid $border-color;
+      border-radius: 2px;
+      color: $font-color;
+      outline-color: $primary-color;
+
+      &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $grey-light;
+        font-size: 12px;
+      }
+    }
+
+    & > label {
+      text-align: center;
+      width: 60px;
+
+      .required {
+        display: inline-block;
+        margin-right: 5px;
+        position: relative;
+        top: 2px;
+      }
+    }
+
+    & > textarea {
+      min-height: 40px;
+      padding: 5px;
+      width: 359px;
+
+      &.input {
+        min-height: 20px;
+        padding: 2px 5px;
+      }
+    }
+
+    & > input[type="text"] {
+      @include setWHL(359px, 20px);
+
+      padding: 0 5px;
+    }
+
+    & > span {
+      display: inline-block;
+      vertical-align: top;
+      padding: 0;
+    }
+
+    .date-time {
+      display: inline-block;
+    }
+  }
+
+  .recycle-timing {
+    margin-right: 10px;
+  }
+}

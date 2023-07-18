@@ -1,0 +1,15 @@
+{
+  "name": "sha_beer-api",
+  "version": "1.0.0",
+  "description": "许可证项目API文档",
+  "title": "许可证项目API文档",
+  "url": "http://localhost:9527",
+  "sampleUrl": "http://localhost:9527",
+  "forceLanguage": "zh-cn",
+  "template": {
+    "showRequiredLabels": true,
+    "withCompare": true,
+    "withGenerator": true,
+    "aloneDisplay": true
+  }
+}

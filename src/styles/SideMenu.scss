@@ -1,0 +1,21 @@
+.side-menu {
+  .MuiDrawer-paper {
+    width: 124px;
+    top: 30px;
+    background: #ebf1ff;
+
+    .MuiList-root {
+      .MuiListItem-root {
+        height: 40px;
+
+        .Mui-selected {
+          color: $primary-color;
+        }
+
+        .MuiTypography-root {
+          margin: auto;
+        }
+      }
+    }
+  }
+}

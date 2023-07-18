@@ -1,0 +1,33 @@
+.app-header {
+  height: 30px;
+
+  .MuiToolbar-root {
+    min-height: 30px !important;
+    background-color: $primary-color;
+  }
+
+  .icon-logo {
+    @include setWH(80px, 20px);
+
+    background: url('/images/logo.png') no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    position:relative;
+    top: 1px;
+  }
+
+  .icon-user {
+    @include setWH(18px, 18px);
+
+    background: url('/images/user.png') no-repeat;
+    background-size: cover;
+    vertical-align: text-bottom;
+    margin-right: 7px;
+    position: relative;
+    top: 2px;
+  }
+
+  .user-name {
+    color: #fff;
+  }
+}

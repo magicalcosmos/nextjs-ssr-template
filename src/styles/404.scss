@@ -1,0 +1,6 @@
+.page-not-found {
+  @include setWH(100%, 100%);
+
+  background: url(/images/404.webp) center center no-repeat;
+  background-size: cover;
+}

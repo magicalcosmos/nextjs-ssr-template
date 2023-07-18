@@ -1,0 +1,132 @@
+.login {
+  @include setWH(100%, 100%);
+
+  background: url('/images/signin_bg.svg') no-repeat;
+  background-size: cover;
+
+  overflow: hidden;
+
+  .logo {
+    margin: 22px 0 0 30px;
+  }
+
+  .system-name {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 80px 0 0 80px;
+  }
+
+  ul, li {
+    list-style: none;
+  }
+
+  .login-frame {
+    min-height: 360px;
+    margin-top: 22px;
+    left: 0;
+    margin-top: -180px;
+    position: fixed;
+    top: 50%;
+    width: 100%;
+
+    .login-frame-list {
+      @include setWH(300px, 330px);
+
+      background: $white;
+      border-radius: 10px;
+      position: absolute;
+      right: 15%;
+      top: 15px;
+      padding: 0 25px;
+
+      li {
+        margin-top: 10px;
+        position: relative;
+
+        &.no-empty {
+          input {
+            border: 1px solid $required;
+
+            &:focus {
+              outline-color: $required;
+            }
+          }
+        }
+
+        &.name {
+          color: $primary-color;
+          font-size: 24px;
+          text-align: center;
+          margin-top: 40px;
+        }
+
+        input {
+          @include setWHL(250px, 36px);
+
+          border: 1px solid $border-color;
+          border-radius: 5px;
+          padding-left: 50px;
+          font-size: 14px;
+
+          &:focus {
+            outline-color: $primary-color;
+          }
+
+          &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: $grey-light;
+            font-size: 12px;
+          }
+        }
+
+        &.username {
+          margin-top: 50px;
+        }
+
+        &.password {
+          margin-top: 13px
+        }
+
+        &.submit{
+          position: absolute;
+          bottom: 44px;
+        }
+        .icon {
+          display: inline-block;
+          background-size: contain;
+          margin: 8px 0 0 18px;
+          position: absolute;
+          z-index: 1;
+        }
+
+        .icon-username {
+          @include setWH(16px, 18px);
+
+          background: url('/images/username.png') no-repeat;
+        }
+
+        .icon-password {
+          @include setWH(17px, 20px);
+
+          background: url('/images/password.png') no-repeat;
+        }
+      }
+    }
+
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .login {
+    .system-name {
+      margin: 160px 0 0 160px;
+    }
+  }
+}
+
+@media only screen and (min-width: 3840px) {
+  .login {
+    .system-name {
+      margin: 240px 0 0 240px;
+    }
+  }
+}

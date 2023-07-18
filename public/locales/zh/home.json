@@ -1,0 +1,33 @@
+{
+  "summary": "许可证书分发上限 {{m}} 个，已分发 {{n}} 个，待分发 {{m-n}} 个",
+  "license": {
+    "name": "许可证名称",
+    "user_count": "用户数",
+    "cpu_count": "CPU数",
+    "expires": "到期时间",
+    "status": "状态",
+    "user": "使用者"
+  },
+  "status": {
+    "to_be_distributed": "待分发",
+    "distributed": "已分发",
+    "expired": "已过期"
+  },
+  "remark": "备注",
+  "operation": {
+    "name": "操作",
+    "distribute": "分发证书",
+    "download": "下载证书",
+    "recycle": "回收证书"
+  },
+  "machine_code": "机器码",
+  "recycle_code": "回收码",
+  "placeholder": {
+    "input_user": "请输入使用者信息",
+    "input_machine_code": "请输入机器码",
+    "input_description": "请输入描述信息",
+    "input_recycle_code": "请输入回收码"
+  },
+  "recycle_timing": "定时回收"
+
+}

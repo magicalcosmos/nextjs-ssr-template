@@ -1,0 +1,50 @@
+@mixin setWH($width, $height) {
+  height: $height;
+  width: $width;
+}
+
+@mixin setWHL($width, $height) {
+  @include setWH($width, $height);
+  line-height: $height;
+}
+
+@mixin setHL($height) {
+  height: $height;
+  line-height: $height;
+}
+
+@mixin setHLC($height) {
+  @include setHL($height);
+  text-align: center;
+}
+
+@mixin setWHC($width, $height) {
+  @include setWHL($width, $height);
+  text-align: center;
+}
+
+@mixin setBtn($bg, $color, $width, $height) {
+  @include setWHC($width, $height);
+  background: $bg;
+  border-radius: 3px;
+  color: $color;
+  cursor: pointer;
+}
+
+@mixin overflowText {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@function ptToPx($px) {
+  @return $px * 4/3;
+}
+
+@function ptToPx2($px) {
+  @return ($px * 4/5) + "px";
+}
+
+@mixin fontColor18($percentage) {
+  color: rgba(18, 18, 18, $percentage) !important;
+}

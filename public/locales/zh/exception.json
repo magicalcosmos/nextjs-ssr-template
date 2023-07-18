@@ -1,0 +1,26 @@
+{
+  "min_string_length": "参数错误",
+
+  "unauthenticated": "未授权",
+  "forbidden": "没有权限",
+  "user_not_exist": "用户名不存在，请联系控安获取",
+  "login_username_password_not_match": "密码错误，如忘记密码，请联系控安获取",
+  "change_old_new_password_same": "新旧密码一样",
+  "change_old_new_password_diff": "新密码和确认密码不一致",
+  "user_existed": "用户名已存在",
+  "no_field_change": "未作任何修改",
+  "change_user_old_new_password_not_match": "旧密码不正确, 请重新输入",
+
+  "license_not_exist": "许可证不存在",
+  "license_duplicate": "许可证重名",
+  "license_assigned_no_edit": "已分发的许可证不允许编辑",
+  "license_no_belong_current_user": "许可证不属于当前用户",
+  "license_assign_exception": "填写的信息有误",
+  "license_recycle_exception": "许可证回收当前状态异常",
+  "license_assign_failed": "许可证颁发失败",
+  "license_recycle_failed": "许可证回收失败",
+  "license_no_key_chain": "缺少许可证密钥",
+
+  "other_exception": "发生未知错误",
+  "network_exception": "网络错误"
+}

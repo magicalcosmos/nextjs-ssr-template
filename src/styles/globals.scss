@@ -1,0 +1,199 @@
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: $body-background;
+  font-size: 12px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+html, body, #__next {
+  height: 100%;
+  width: 100%;
+}
+
+.app-main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.MuiTable-root {
+  th,
+  td {
+    padding: 0;
+    @include setHL(30px);
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  th {
+    color: $grey-light;
+  }
+
+  td {
+    color: $grey-medium;
+  }
+
+  .table-blank {
+    text-align: center;
+    color: $grey-medium;
+    padding: 0;
+    @include setHL(30px);
+  }
+}
+
+ul, li {
+  list-style: none;
+}
+
+.head-more {
+  @include setHL(71px);
+
+  color: $grey-heavy;
+  font-size: 24px;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.no-border {
+  border: none !important;
+}
+
+.required {
+  color: $required;
+}
+
+.text-ellipse {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/** date picker style */
+.date-picker-box {
+  display: inline-block;
+  position: relative;
+
+  .date-picker-show {
+    .MuiFormLabel-root {
+      line-height: 20px;
+      top: -16px;
+      left: 16px;
+    }
+
+    .MuiInputBase-root {
+      flex-direction: row-reverse;
+      cursor: pointer;
+
+      input {
+        cursor: pointer;
+      }
+
+      i.icon-calendar {
+        height: 14px;
+        width: 14px;
+        background: url(/images/calendar.png) no-repeat;
+        background-size: cover;
+        vertical-align: middle;
+        position: absolute;
+        left: 10px;
+        top: 3px;
+      }
+
+      &:not(.Mui-disabled):hover i.icon-calendar {
+        filter: brightness(0.1);
+      }
+
+      &.Mui-disabled {
+        background-color: #eee;
+        cursor: not-allowed;
+
+        input {
+          cursor: not-allowed;
+        }
+      }
+    }
+
+    .MuiInputBase-input {
+      padding: 0;
+      padding-left: 15px;
+      @include setWHL(80px, 20px);
+    }
+  }
+}
+
+/** 分页器 */
+.define-pagination {
+  color: $grey-heavy;
+
+  .MuiSelect-select {
+    @include setHL(20px);
+
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .label1 {
+    margin-right: 5px;
+  }
+
+  .label2 {
+    margin-left: 5px;
+    margin-right: 15px;
+  }
+
+  .label3 {
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+
+  .to-page {
+    .MuiInputBase-input {
+      padding: 0 4px;
+      text-align: center;
+      @include setWHL(40px, 20px);
+    }
+  }
+
+}
+
+
+.cursor {
+  cursor: pointer;
+}
+
+table {
+  table-layout: fixed;
+
+  td {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

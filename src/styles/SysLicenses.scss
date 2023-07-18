@@ -1,0 +1,84 @@
+.user-licenses-container {
+  @include setWH(92%, 96%);
+
+  margin: 1% auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 22px 0px rgba(0,0,0,0.03);
+  padding: 14px;
+
+  .pl-14 {
+    padding-left: 14px;
+  }
+
+  .overview {
+    color: $grey-light;
+    line-height: 32px;
+  }
+
+  .search-input {
+    width: 200px;
+    height: 32px;
+    border-radius: 5px;
+    border: 1px solid #d9d9d9;
+    margin-right: 8px;
+
+    input {
+      color: #000000;
+
+      &::placeholder {
+        color: $grey-medium;
+      }
+    }
+
+    .icon-search {
+      @include setWH(30px, 30px);
+
+      background: url('/images/search.png') no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .add-button {
+    width: fit-content;
+    height: 32px;
+    background: $primary-color;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .list {
+    margin-top: 10px;
+
+    .status-badge {
+      &::before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-radius: 4px;
+        display: inline-block;
+        margin-right: 4px;
+      }
+
+      &.default::before {
+        background-color: $grey-medium;
+      }
+      &.green::before {
+        background-color: $to-be-distributed;
+      }
+      &.red::before {
+        background-color: $expired;
+      }
+    }
+
+    .edit {
+      color: $primary-color;
+      margin-right: 10px;
+    }
+
+    .delete {
+      color: $expired;
+    }
+  }
+}
